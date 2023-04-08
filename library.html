@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="library.css">
+</head>
+<body>
+    <header>
+        <h1>Library Management System</h1>
+        <nav>
+            <ul>
+                <!-- <li><a href="#">Home</a></li> -->
+                <li><a href="#">Add Book</a></li>
+                <!-- <li><a href="#">Search Book</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+    <div class="top"><h2 class="list">List of Books</h2>
+        <div class="searchBox"><input class="searchInput" type="search" placeholder="Search..."></div>
+    </div>
+    <div class="tablediv">
+        <table id="booktable">
+    
+        </table>
+    </div>
+    </div>
+    <form class="editdetails" >
+        <label>Book's Title</label>
+        <input type="text" id="editname" placeholder="Enter a book name..." required/>
+        <label>Author</label>
+        <input type="text" id="editauthor" placeholder="Enter the author name..." required/>
+        <div id="options">
+        <button type="submit" class="editbtn" onclick="EditSave(this)">Edit</button>
+        </div>
+    </form>
+
+    <form class="details" >
+        <div style="width: 300px;">
+        <label>Book's Title:</label>
+        <input type="text" id="bookname" placeholder="Enter a book name..." required/>
+        <label>Author:</label>
+        <input type="text" id="author" placeholder="Enter the author name..." required/>
+        <label>Count:</label>
+        <input id="count" placeholder="Book status...">
+        <div id="options">
+                <button type="button" id="backbtn">Back</button>
+        <button type="submit" id="addbtn">Add</button>
+        <div class="errMgs">Please give valid inputs</div>
+        </form>
+    </div>
+    </div>
+</body>
+<script src="library.js"></script>
+</html> 

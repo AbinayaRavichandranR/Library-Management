@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main{
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+.details,.editdetails {
+    /* border:1px solid black; */
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+    align-items: center;
+    font-size: 22px;
+    margin: 20px;
+    width: 450px;
+    padding: 10px;
+    margin:20px auto;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    display: none;
+}
+
+.details input {
+    width:300px;
+    height: 40px;
+}
+
+.details button{
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 5.4px 5.4px 3.2px;
+}
+
+.details button:active{
+    box-shadow:none;
+}
+
+
+#trash {
+    float:right;
+    font-size:25px;
+}
+
+.tablediv {
+    
+    display: flex;
+}
+
+.editdetails {
+    height: 200px;
+}
+
+.editdetails input {
+    width: 200px;
+    height: 40px;
+}
+
+#booktable{
+    margin: 0;
+}
+
+.list{
+    margin: 20px 0px 10px 0px;
+}
+
+table {
+    width: 100%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 7px;
+    text-align: left;
+}
+
+th {
+    background-color: #eee;
+    font-weight: bold;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display:flex;
+}
+.searchBox{
+    margin-top: 20px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.searchInput{
+    height: 25px;
+}
+.errMgs{
+    color: red;
+    display: none;
+    text-align: center;
+    font-size: 15px;
+}
+.example::-webkit-scrollbar {
+    display: none;
+}
+.example{
+    max-width:200px; 
+    overflow:scroll;
+}
